@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5670
+    username: peter
+    password: 820517
+  application:
+    name: master
+  cloud:
+    config:
+      profile: dev
+      label: master
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
+server:
+  port: 10009

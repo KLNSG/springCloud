@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: master
+  cloud:
+     config:
+       uri: http://localhost:10008/
+       profile: dev
+       lable: master
+
+server:
+  port: 10009
+
